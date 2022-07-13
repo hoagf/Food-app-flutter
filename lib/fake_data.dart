@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/Models/food.dart';
 import './Models/Category.dart';
 
 List<Category> fake_category = [
-  Category(id:1, content:'Apple', color:Colors.deepOrange),
-  Category(id:2, content:'Pizza', color:Colors.green),
-  Category(id:3, content:'Humberger', color:Colors.deepPurple),
-  Category(id:4, content:'Humberger', color:Colors.red),
+  Category(id:1, content:'Japanese', color:Colors.deepOrange),
+  Category(id:2, content:'VietNamese', color:Colors.green),
+  Category(id:3, content:'Chinese', color:Colors.deepPurple),
+  Category(id:4, content:'Thailand', color:Colors.red),
   Category(id:5, content:'Humberger', color:Colors.amberAccent),
   Category(id:6, content:'Humberger', color:Colors.teal),
   Category(id:7, content:'Humberger', color:Colors.lightBlue),
@@ -14,4 +15,36 @@ List<Category> fake_category = [
   Category(id:10, content:'Humberger', color:Colors.yellow),
   Category(id:11, content:'Humberger', color:Colors.tealAccent),
   Category(id:23, content:'Humberger', color:Colors.blueAccent),
+];
+var FAKE_FOOD = [
+  Food(name: 'Sushi',
+      urlImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Sushi_platter.jpg/800px-Sushi_platter.jpg',
+      duration: Duration(minutes: 25),
+      complexity: Complexity.Medium,
+      ingredients: ['Nori', 'chili', 'sushi-meshi'],
+      categoryId: 1),
+  Food(name: 'Salads',
+      urlImage: 'https://recipesfromapantry.com/wp-content/uploads/2016/06/chopped-Veggie-Salad-42-of-66.jpg',
+      duration: Duration(minutes: 10),
+      complexity: Complexity.Simple,
+      ingredients: ['Trough shell', 'Mactra chinensis', 'Scallion'],
+      categoryId: 1),
+  Food(name: 'Botamochi',
+      urlImage: 'https://cookingwithdog.com/wp-content/uploads/2018/10/botamochi-00.jpg',
+      duration: Duration(minutes: 45),
+      complexity: Complexity.Medium,
+      ingredients: ['Rice', 'Water'],
+      categoryId: 1),
+  Food(name: 'Pho',
+      urlImage: 'https://upload.wikimedia.org/wikipedia/commons/5/53/Pho-Beef-Noodles-2008.jpg',
+      duration: Duration(minutes: 15),
+      complexity: Complexity.Simple,
+      ingredients: ['Rice', 'Water', 'Scallion'],
+      categoryId: 2),
+  Food(name: 'BanhCuon',
+      urlImage: 'https://bepcuatoi.com/wp-content/uploads/2021/08/banh-cuon-thanh-tri-1200x900.jpg',
+      duration: Duration(minutes: 10),
+      complexity: Complexity.Medium,
+      ingredients: ['Rice', 'Water', 'Scallion', 'Meat'],
+      categoryId: 2),
 ];
